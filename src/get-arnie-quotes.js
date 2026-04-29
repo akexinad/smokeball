@@ -6,7 +6,6 @@ const statusKeyMap = {
 };
 
 const getArnieQuotes = async (urls) => {
-    // TODO: Implement this function.
     if (!Array.isArray(urls)) {
         return {
             status: 400,
