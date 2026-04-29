@@ -14,9 +14,9 @@ const getArnieQuotes = async (urls) => {
         };
     }
 
-    const response = await Promise.all(urls.map((url) => httpGet(url)));
+    const responses = await Promise.all(urls.map((url) => httpGet(url)));
 
-    const results = response.map((res) => {
+    const results = responses.map((res) => {
         const body = JSON.parse(res.body);
 
         return {
